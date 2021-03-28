@@ -36,4 +36,9 @@ public class BookServiceImpl implements BookService {
     public Book getBook(int id) {
         return repository.findById(id);
     }
+
+    @Override
+    public long count() {
+        return repository.count();
+    }
 }
