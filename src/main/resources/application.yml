@@ -1,0 +1,15 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude: env
+      base-path: /monitor
+  health:
+    defaults:
+      enabled: true
+    diskspace:
+      enabled: false
+  endpoint:
+    health:
+      show-details: always
